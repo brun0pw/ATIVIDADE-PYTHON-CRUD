@@ -48,7 +48,7 @@ def listar_todos_funcionarios():
     lista_funcionario = session.query(Funcionario).all()
 
     for funcionarios in lista_funcionario:
-        print(f"Nome: {funcionarios.nome}, CPF: {funcionarios.cpf}, Setor: {funcionarios.setor}, Função: {funcionarios.funcao}"))
+        print(f"Nome: {funcionarios.nome}, CPF: {funcionarios.cpf}, Setor: {funcionarios.setor}, Função: {funcionarios.funcao}")
 def pesquisar_um_funcionario(cpf):
     funcionario = session.query(Funcionario).filter_by(cpf = cpf).first()
     if funcionario:
@@ -110,3 +110,4 @@ while True:
         case 0:
             break
         case _:
+            print("ERRO")
