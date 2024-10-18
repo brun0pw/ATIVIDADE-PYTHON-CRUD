@@ -1,6 +1,3 @@
-
-vicio em mim a policia em mim
-
 import os
 os.system("cls||clear")
 #vicio em mim a policia em mim
